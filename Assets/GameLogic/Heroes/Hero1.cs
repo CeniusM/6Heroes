@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hero1 : MonoBehaviour, IEntity
+public class Enitiy : MonoBehaviour, IEntity
 {
     public EntityStats _stats = new EntityStats();
     private EntityState _state = EntityState.Inactive;
