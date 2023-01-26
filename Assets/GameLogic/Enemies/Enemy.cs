@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hero1 : MonoBehaviour, IEntity
+public class Enemy : MonoBehaviour, IEntity
 {
     public EntityStats _stats = new EntityStats();
     private EntityState _state = EntityState.Inactive;
@@ -24,8 +24,8 @@ public class Hero1 : MonoBehaviour, IEntity
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(1f * Time.deltaTime, 0);
-        if (transform.position.x > 10)
+        transform.position -= new Vector3(1f * Time.deltaTime, 0);
+        if (transform.position.x < -10)
             Destroy(gameObject);
     }
 }

@@ -6,7 +6,7 @@ public class EntityManager : MonoBehaviour
 {
     public GameObject hero1;
 
-    float TimeToSpawn = 1f;
+    float TimeToSpawn = 0.1f;
     float TimeSinceLastSpawn = 0;
 
     // Start is called before the first frame update
